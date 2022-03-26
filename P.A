@@ -1,11 +1,14 @@
-list1= [4,7,10,13,17]
-r= list1[1]-list1[0]
-y= 0
-x= list1[0]
+list1 = [5, 4, 3, 2, 1]
+r = list1[1]-list1[0]
+y = 0
+x = list1[0]
 for i in range(len(list1)):
     if list1[y] == x:
-        y+=1
-        x+=r
-        print("A sequencia digitada é uma P.A")
+        y += 1
+        x += r
+        continue
     else:
-        print("A sequencia digitada é não é uma P.A")
+        print("A sequencia digitada não é uma P.A")
+        break
+else:
+    print("A sequencia digitada é uma P.A")
